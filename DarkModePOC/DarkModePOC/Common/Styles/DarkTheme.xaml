@@ -3,14 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DarkModePOC.Common.Styles.DarkTheme">
 
+    <!-- Application Colors -->
     <Color x:Key="BackgroundColor">#FF000000</Color>
     <Color x:Key="FrameColor">#FF1f1f1f</Color>
     <Color x:Key="TextPrimaryColor">#B0FFFFFF</Color>
     <Color x:Key="TextSecondaryColor">#eFeFeF</Color>
 
+    <!-- Label Style -->
     <Style x:Key="Title" TargetType="Label">
-        <Setter Property="TextColor" Value="{StaticResource TextPrimaryColor}"/>
-        <Setter Property="FontAttributes" Value="Bold"/>
-        <Setter Property="FontSize" Value="Large"/>
+        <Setter Property="TextColor" Value="{StaticResource TextPrimaryColor}" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontSize" Value="Large" />
     </Style>
 </ResourceDictionary>

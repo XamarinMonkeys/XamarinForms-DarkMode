@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using static DarkModePOC.App;
+﻿using static DarkModePOC.App;
 
 namespace DarkModePOC
 {

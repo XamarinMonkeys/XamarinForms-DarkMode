@@ -1,18 +1,18 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace DarkModePOC
 {
     public partial class App : Application
     {
         public static Theme AppTheme { get; set; }
+
         public App()
         {
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
         }
+
         protected override void OnStart()
         {
         }
@@ -24,6 +24,7 @@ namespace DarkModePOC
         protected override void OnResume()
         {
         }
+
         public enum Theme
         {
             Light,

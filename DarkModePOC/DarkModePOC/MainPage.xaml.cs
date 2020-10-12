@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using static DarkModePOC.App;
 
@@ -21,22 +17,12 @@ namespace DarkModePOC
 
         private void Switch_Toggled(object sender, ToggledEventArgs e)
         {
-            var toggleStatus = themeToggle.IsToggled;
-            SetTheme(toggleStatus);
-            
+            SetTheme(status:themeToggle.IsToggled);
         }
 
-        void SetTheme(bool status)
+        private void SetTheme(bool status)
         {
-            Theme themeRequested;
-            if (status)
-            {
-                 themeRequested = Theme.Dark;
-            }
-            else
-            {
-                themeRequested = Theme.Light;
-            }
+            var themeRequested = status ? Theme.Dark : Theme.Light;
 
             DependencyService.Get<IAppTheme>().SetAppTheme(themeRequested);
         }

@@ -1,17 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Foundation;
-using UIKit;
-using DarkModePOC;
-using static DarkModePOC.App;
-using DarkModePOC.Common.Styles;
-using Xamarin.Forms.Platform.iOS;
+﻿using DarkModePOC.Common.Styles;
 using Xamarin.Forms;
+using static DarkModePOC.App;
 
-[assembly:Dependency(typeof(DarkModePOC.iOS.ThemeHelper))]
+[assembly: Dependency(typeof(DarkModePOC.iOS.ThemeHelper))]
 namespace DarkModePOC.iOS
 {
     public class ThemeHelper : IAppTheme
@@ -22,7 +13,6 @@ namespace DarkModePOC.iOS
         }
         void SetTheme(Theme mode)
         {
-
             if (mode == Theme.Dark)
             {
                 if (App.AppTheme == Theme.Dark)
@@ -37,6 +27,5 @@ namespace DarkModePOC.iOS
             }
             App.AppTheme = mode;
         }
-
     }
 }

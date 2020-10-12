@@ -7,6 +7,7 @@
     <Color x:Key="FrameColor">#FFFFFFFF</Color>
     <Color x:Key="TextPrimaryColor">#B0000000</Color>
     <Color x:Key="TextSecondaryColor">#858585</Color>
+
     <Style x:Key="Title" TargetType="Label">
         <Setter Property="TextColor" Value="{StaticResource TextPrimaryColor}"/>
         <Setter Property="FontSize" Value="Large"/>
