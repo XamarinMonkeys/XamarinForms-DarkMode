@@ -4,14 +4,15 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             Title="App Theme"
              BackgroundColor="{DynamicResource BackgroundColor}"
              x:Class="DarkModePOC.MainPage">
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <!-- Place new controls here -->
-        <Switch x:Name="themeToggle" IsToggled="False" Toggled="Switch_Toggled"/>
-        <Label TextColor="{DynamicResource TextSecondaryColor}" Text=" sample"/>
-        <Button HorizontalOptions="Center" VerticalOptions="Center" TextColor="Red" Text="Next Page" Clicked="Button_Clicked" />
+        <!--<Switch x:Name="themeToggle" IsToggled="False" Toggled="Switch_Toggled"/>-->
+        <Label TextColor="{DynamicResource TextSecondaryColor}" Text="Xamarin Monkeys"/>
+        <!--<Button HorizontalOptions="Center" VerticalOptions="Center" TextColor="Red" Text="Next Page" Clicked="Button_Clicked" />-->
     </StackLayout>
 
 </ContentPage>

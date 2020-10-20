@@ -6,6 +6,6 @@
              mc:Ignorable="d"
              x:Class="DarkModePOC.App">
     <Application.Resources>
-        <ResourceDictionary Source="Common/Styles/DarkTheme.xaml" />
+        <ResourceDictionary Source="Common/Styles/LightTheme.xaml" />
     </Application.Resources>
 </Application>

@@ -21,8 +21,8 @@ namespace DarkModePOC
 
         private void Switch_Toggled(object sender, ToggledEventArgs e)
         {
-            var toggleStatus = themeToggle.IsToggled;
-            SetTheme(toggleStatus);
+            //var toggleStatus = themeToggle.IsToggled;
+            //SetTheme(toggleStatus);
             
         }
 
