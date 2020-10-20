@@ -10,3 +10,7 @@ This sample project contains for Xamarin Forms DarkMode demo and how to enable d
 ## Not Supported
 
 1. UWP
+
+## How it work's
+
+Wrote platform renderer and change the colors
