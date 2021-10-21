@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Foundation;
 using UIKit;
 using DarkModePOC;
@@ -16,13 +15,14 @@ namespace DarkModePOC.iOS
 {
     public class ThemeHelper : IAppTheme
     {
+        //Set App Theme
         public void SetAppTheme(App.Theme theme)
         {
             SetTheme(theme);
         }
+        //Set Theme 
         void SetTheme(Theme mode)
         {
-
             if (mode == Theme.Dark)
             {
                 if (App.AppTheme == Theme.Dark)
@@ -37,6 +37,5 @@ namespace DarkModePOC.iOS
             }
             App.AppTheme = mode;
         }
-
     }
 }
